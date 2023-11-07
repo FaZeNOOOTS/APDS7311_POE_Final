@@ -1,0 +1,72 @@
+GET https://localhost:3000/api HTTP/1.1
+###
+GET https://localhost:3000/api/fruits HTTP/1.1
+###
+GET http://localhost:3000/test HTTP/1.1
+###
+POST https://localhost:3000/api/fruits HTTP/1.1
+content-type: application/json
+
+{
+    "id": "4",
+    "name": "Pear"
+}
+
+###
+DELETE https://localhost:3000/api/fruits/6524218c07ffdcc4f2eb6d0f HTTP/1.1
+###
+POST https://localhost:3000/api/users/signup HTTP/1.1
+content-type: application/json
+
+{
+    "username": "Test_User2",
+    "password": "pass123",
+    "firstname": "User",
+    "lastname": "User"
+}
+###
+GET https://localhost:3000/api/users HTTP/1.1
+###
+DELETE https://localhost:3000/api/users/6544cd3689256dfadded725a HTTP/1.1
+###
+POST https://localhost:3000/api/posts/create HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Nazier_test",
+    "description": "Naz_test",
+    "departmentCode": "test_departCode"
+}
+###
+GET https://localhost:3000/api/posts/all HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTI1NTQ3ZjgyMmY5MDY1MjRiOGVkNmUiLCJpYXQiOjE2OTY5NDYwNjl9.dmKR6cIVfa3RcjBhOMVfsep0QCfxVsegTvNNehUBTLc
+###
+DELETE https://localhost:3000/api/posts/6543b157daccfd191ce0f476
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTI1NjgwNmI3ODIwOTZhYjlkNWM0ZTciLCJpYXQiOjE2OTcwMjA5NzZ9.-g5-y0EQ6Z-D54UhMKnrGMfsvkja04PfFgLEsC_CjsI
+###
+POST https://localhost:3000/api/auth/login HTTP/1.1
+content-type: application/json
+
+{
+    "username": "Test_User",
+    "password": "pass"
+}
+###
+POST https://localhost:3000/api/posts/create HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTI1NjgwNmI3ODIwOTZhYjlkNWM0ZTciLCJpYXQiOjE2OTY5NTA4MDR9.NvC_-4Xke1rUHzXrZYGT4zzji4kBuCilg94XOIy11-Y
+
+{
+    "title": "Nazier_test2",
+    "description": "Naz_test",
+    "departmentCode": "test_departCode"
+}
+###
+GET https://localhost:3000/api/posts/all HTTP/1.1
+###
+DELETE https://localhost:3000/api/posts/6547a6f368307654dbe978d9 HTTP/1.1
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTI1NjgwNmI3ODIwOTZhYjlkNWM0ZTciLCJpYXQiOjE2OTY5NTAyOTB9.AwEmLdOkoYskoMC-HUROmSTaKfIKDO8VABZrXywZMPA
+###
+
+GET https://localhost:3000/api/users/profile HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTQzYWQxNDc5ZjYwNTY4NjZhOWVjZWQiLCJpYXQiOjE2OTkxODA1Njl9.jAwEp8LQIJW7mT-KDsrlaImtNONRu_ryzVtbpPPlqu8
